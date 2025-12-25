@@ -213,17 +213,18 @@
  }
 
  .buy-method-name {
-     font-size: 18px;
+     font-size: 16px;
      font-weight: 600;
      margin-bottom: 15px;
      color: #333;
  }
 
  .buy-btn {
+     font-size: 16px;
      padding: 10px 20px;
      border: none;
      border-radius: 12px;
-     background: linear-gradient(135deg, #4e54c8, #8f94fb);
+     background: #2a76f1;
      color: #fff;
      font-weight: 600;
      cursor: pointer;
