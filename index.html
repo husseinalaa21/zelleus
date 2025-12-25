@@ -2,99 +2,21 @@
 <html lang="en">
 
 <head>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelleus (ZLL) – The Crypto Zelle</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./logo.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zelleus (ZLL) – The Crypto Zelle</title>
 
-    <!-- Meta Description -->
-    <meta name="description" content="Zelleus (ZLL) bridges instant payments and blockchain freedom. Fast, secure, and community-powered crypto. Join the next wave in digital finance!">
-</head>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./logo.png">
+        <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f7f7f7;
-            color: #111;
-        }
+        <!-- Meta Description -->
+        <meta name="description"
+            content="Zelleus (ZLL) bridges instant payments and blockchain freedom. Fast, secure, and community-powered crypto. Join the next wave in digital finance!">
+    </head>
 
-        .header {
-            background: linear-gradient(90deg, #4e54c8, #8f94fb);
-            color: white;
-            padding: 20px 40px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo_image img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .logo_text {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .body {
-            text-align: center;
-            padding: 60px 20px 40px;
-        }
-
-        .des {
-            font-size: 18px;
-            max-width: 700px;
-            margin: 0 auto 20px;
-            line-height: 1.6;
-        }
-
-        .ad {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .buy {
-            display: inline-block;
-            padding: 15px 40px;
-            background: #4e54c8;
-            color: white;
-            font-weight: bold;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .buy:hover {
-            background: #8f94fb;
-        }
-
-        .info {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #777;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .end {
-            height: 100px;
-        }
-    </style>
 </head>
 
 <body>
@@ -104,13 +26,14 @@
                 <img src="./logo.png" alt="Zelleus Logo">
             </div>
             <div class="logo_text">
-                Zelleus (ZLL) – The Crypto Zelle
+                Zelleus
             </div>
         </div>
     </div>
     <div class="body">
         <div class="des">
-            Zelleus bridges the gap between instant payments and blockchain freedom. Fast, secure, and
+            Zelleus (ZLL) – The Crypto Zelle bridges the gap between instant payments and blockchain freedom. Fast,
+            secure, and
             community-powered, Zelleus makes sending, receiving, and trading money fun. Be part of the movement shaping
             the next wave in digital finance!
         </div>
@@ -119,37 +42,23 @@
         </div>
         <div class="buy-options" style="margin-top:30px; text-align:center;">
             <div style="margin-bottom:10px; font-weight:bold; font-size:18px;">Buy ZLL Crypto From:</div>
-            <!-- Copy Token Button -->
-<div style="margin-top:10px; display:flex; justify-content:center; align-items:center; gap:10px;">
-    <input type="text" id="token-mint" value="3BTseW8neoujb5bgWHk6kipCXVSrTM3C2jsZX7eNpump" readonly
-        style="padding:8px 12px; width:300px; border-radius:8px; border:1px solid #ccc; text-align:center; font-size:14px;">
-    <button
-        style="padding:6px; border:none; border-radius:8px;cursor:pointer; transition:0.3s;"
-        onmouseover="this.style.background='#3b3fc1'" onmouseout="this.style.background='#4e54c8'"
-        onclick="copyToken()">
-        <img src="./copy-solid-full.svg" alt="Copy" style="width:20px; height:20px;">
-    </button>
-</div>
-            <!-- Jupiter Swap Button -->
-            <button
-                style="padding:10px 20px; margin:5px; border:none; border-radius:8px; background:#4e54c8; color:white; cursor:pointer; font-weight:bold;"
-                id="buy-jupiter">
-                Jupiter Swap
-            </button>
+            <div class="copy-token-container">
+                <input type="text" id="token-mint" value="3BTseW8neoujb5bgWHk6kipCXVSrTM3C2jsZX7eNpump" readonly>
+                <button class="copy-btn" onclick="copyToken()">
+                    <img src="./copy-solid-full.svg" alt="Copy">
+                </button>
+            </div>
 
-            <!-- Raydium Swap Button -->
-            <button
-                style="padding:10px 20px; margin:5px; border:none; border-radius:8px; background:#00c3ff; color:white; cursor:pointer; font-weight:bold;"
-                id="buy-raydium">
-                Raydium Swap
-            </button>
+            <section class="buy-section">
+                <div class="buy-methods">
+                    <div class="buy-card">
+                        <div class="buy-method-name">Buy via Jupter</div>
+                        <button class="buy-btn" onclick="buyWithJupter()">Buy Now</button>
+                    </div>
+                </div>
+            </section>
 
-            <!-- Solflare Wallet Button -->
-            <button
-                style="padding:10px 20px; margin:5px; border:none; border-radius:8px; background:#6f42c1; color:white; cursor:pointer; font-weight:bold;"
-                id="buy-solflare">
-                Solflare Wallet
-            </button>
+
         </div>
 
         <script>
@@ -171,25 +80,21 @@
                 window.open("https://solflare.com", "_blank");
             };
         </script>
-
-
-        <div class="info-boxes" style="display:flex; justify-content:center; gap:20px; margin-top:40px;">
-            <div class="box"
-                style="background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:150px; text-align:center;">
-                <div style="font-weight:bold; font-size:16px;">Market Status</div>
-                <div id="token-status" style="margin-top:10px; font-size:18px; color:#4e54c8;">New & Growing</div>
+        <div class="info-boxes">
+            <div class="box">
+                <h2>Market Status</h2>
+                <div id="token-status">New & Growing</div>
             </div>
-            <div class="box"
-                style="background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:150px; text-align:center;">
-                <div style="font-weight:bold; font-size:16px;">Symbol</div>
-                <div id="token-symbol" style="margin-top:10px; font-size:18px; color:#4e54c8;">ZLL</div>
+            <div class="box">
+                <h2>Symbol</h2>
+                <div id="token-symbol">ZLL</div>
             </div>
-            <div class="box"
-                style="background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:150px; text-align:center;">
-                <div style="font-weight:bold; font-size:16px;">Launch Date</div>
-                <div id="token-date" style="margin-top:10px; font-size:18px; color:#4e54c8;">2026</div>
+            <div class="box">
+                <h2>Launch Date</h2>
+                <div id="token-date">2026</div>
             </div>
         </div>
+
 
         <script>
             // Dynamic content (can be updated later with API or user input)
