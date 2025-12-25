@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-XxjHp9k9rY2V9KvQ+XxI9y3XzX7g+6Yjq3EYwYh68j4+f6V6l7kH8X1X7QpZkXy8l+sD6PkszJ/r4tE4Wxj1jw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zelleus (ZLL) – The Crypto Zelle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./logo.png">
+
+    <!-- Meta Description -->
+    <meta name="description" content="Zelleus (ZLL) bridges instant payments and blockchain freedom. Fast, secure, and community-powered crypto. Join the next wave in digital finance!">
+</head>
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -114,17 +120,16 @@
         <div class="buy-options" style="margin-top:30px; text-align:center;">
             <div style="margin-bottom:10px; font-weight:bold; font-size:18px;">Buy ZLL Crypto From:</div>
             <!-- Copy Token Button -->
-            <!-- Copy Token Button -->
-            <div style="margin-top:10px; display:flex; justify-content:center; align-items:center; gap:10px;">
-                <input type="text" id="token-mint" value="3BTseW8neoujb5bgWHk6kipCXVSrTM3C2jsZX7eNpump" readonly
-                    style="padding:8px 12px; width:300px; border-radius:8px; border:1px solid #ccc; text-align:center; font-size:14px;">
-                <button
-                    style="padding:8px 12px; border:none; border-radius:8px; background:#4e54c8; color:white; cursor:pointer; font-weight:bold; font-size:16px; transition:0.3s;"
-                    onmouseover="this.style.background='#3b3fc1'" onmouseout="this.style.background='#4e54c8'"
-                    onclick="copyToken()">
-                    <i class="fa-solid fa-clipboard"></i>
-                </button>
-            </div>
+<div style="margin-top:10px; display:flex; justify-content:center; align-items:center; gap:10px;">
+    <input type="text" id="token-mint" value="3BTseW8neoujb5bgWHk6kipCXVSrTM3C2jsZX7eNpump" readonly
+        style="padding:8px 12px; width:300px; border-radius:8px; border:1px solid #ccc; text-align:center; font-size:14px;">
+    <button
+        style="padding:6px; border:none; border-radius:8px;cursor:pointer; transition:0.3s;"
+        onmouseover="this.style.background='#3b3fc1'" onmouseout="this.style.background='#4e54c8'"
+        onclick="copyToken()">
+        <img src="./copy-solid-full.svg" alt="Copy" style="width:20px; height:20px;">
+    </button>
+</div>
             <!-- Jupiter Swap Button -->
             <button
                 style="padding:10px 20px; margin:5px; border:none; border-radius:8px; background:#4e54c8; color:white; cursor:pointer; font-weight:bold;"
