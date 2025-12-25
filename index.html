@@ -65,20 +65,9 @@
             const tokenMint = "3BTseW8neoujb5bgWHk6kipCXVSrTM3C2jsZX7eNpump";
 
             // Jupiter button
-            document.getElementById("buy-jupiter").onclick = function () {
-                // Check if token is live (demo: show message for now)
-                alert("Zelleus (ZLL) is coming soon! Jupiter Swap link will be available after launch and liquidity setup.");
-            };
-
-            // Raydium button
-            document.getElementById("buy-raydium").onclick = function () {
-                alert("Raydium Swap will be available once ZLL token has a liquidity pool.");
-            };
-
-            // Solflare button
-            document.getElementById("buy-solflare").onclick = function () {
-                window.open("https://solflare.com", "_blank");
-            };
+            function buyWithJupter(){
+                window.open("https://jup.ag/tokens/3BTseW8neoujb5bgWHk6kipCXVSrTM3C2jsZX7eNpump", "_blank");
+            }
         </script>
         <div class="info-boxes">
             <div class="box">
